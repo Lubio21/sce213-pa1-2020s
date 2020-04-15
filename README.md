@@ -108,9 +108,9 @@ Each directory is separated by `:`. For example, if `PATH=/usr/bin:./bin:./sce21
   Timeout is set to 10 seconds
   $ sleep 5
   ( ... after 5 seconds ... )
-	$ sleep 20
-	( ... after 10 seconds ... )
-	sleep is timed out   # The shell terminated the program
+  $ sleep 20
+  ( ... after 10 seconds ... )
+  sleep is timed out   # The shell terminated the program
   $ timeout 0
   Timeout is disabled
   $ sleep 100
@@ -134,7 +134,7 @@ Each directory is separated by `:`. For example, if `PATH=/usr/bin:./bin:./sce21
   argv[2] = 10
   ( ... toy will sleep for 10 seconds ... )
   done!     # This output means the toy finished execution properly.
-	$ timeout 5
+  $ timeout 5
   Timeout is set to 5 seconds
   $ ./toy sleep 10
   pid  = xxxxxx
@@ -142,11 +142,11 @@ Each directory is separated by `:`. For example, if `PATH=/usr/bin:./bin:./sce21
   argv[0] = ./toy
   argv[1] = sleep
   argv[2] = 10
-	...
+  ...
   ( ... after 10 seconds ...)
   ./toy is timed out
   $
-	```
+  ```
 
 - Use `__timeout` variable to read the current timeout value. Use `set_timeout()` function to set the value. DO NOT MODIFY `__timeout` variable DIRECTLY.
 
